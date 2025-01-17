@@ -1,0 +1,60 @@
+                                                         **PLAN API REQUIREMENTS**
+
+Q-commerce examples:
+
+1-Endpoint Name: /patients
+Method: GET
+Description: Fetch patient profiles from Sanity.
+Response:
+Patient details (ID, name, contact information, medical history).
+
+2-Endpoint Name: /doctors
+Method: GET
+Description: Retrieve information about doctors available on MedSwift.
+Response:
+Doctor profiles (ID, name, specialization, contact details).
+
+3-Endpoint Name: /prescriptions
+Method: POST
+Description: Create a new prescription in Sanity.
+Payload:
+Doctor’s details (ID, name).
+Patient’s details (ID, name).
+Medication details (ID, name, dosage, instructions).
+
+4-Endpoint Name: /inventory
+Method: GET
+Description: Fetch medication inventory details.
+Response:
+Available medications (ID, name, stock levels).
+
+5-Endpoint Name: /express-delivery-status
+Method: GET
+Description: Fetch real-time delivery updates for perishable items.
+Response:delivery status(order ID, status,ETA)
+
+6-Endpoint Name: /products
+Method: GET
+Description: Fetch all available products from Sanity.
+Response:
+Product details (ID, name, price, stock, image).
+
+7-Endpoint Name: /orders
+Method: POST
+Description: Create a new order in Sanity.
+Payload:
+Customer info (name, address, contact details).
+Product details (product ID, quantity).
+Payment status (pending, paid, etc.).
+
+8-Endpoint Name: /shipment
+Method: GET
+Description: Track order status via a third-party API.
+Response:
+Shipment ID.
+Order ID.
+Status (In Transit, Delivered, etc.).
+Expected delivery date.
+
+
+

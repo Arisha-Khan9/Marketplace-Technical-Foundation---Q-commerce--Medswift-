@@ -1,0 +1,87 @@
+    **Focus on designing schemas in Sanity to align with the business goals**
+
+Why sanity?
+
+Modern Headless CMS:
+
+Sanity is a headless CMS (Content Management System), which means it separates content management from presentation. It allows you to manage content without being tied to a specific frontend technology.
+Unlike traditional CMS platforms, Sanity doesn’t dictate how your content is displayed. You have the flexibility to use any front end framework or technology stack.
+
+Structured Content and Reusability:
+
+Sanity uses structured content, allowing you to define schemas for your data. This structured approach ensures consistency and enables content reuse across different channels (web, mobile, etc.).
+You can create reusable content blocks (like components) and assemble them dynamically.
+
+Composable Approach:
+
+Sanity follows a composable approach. You can connect it to any third-party technology or data source.
+Whether you need to integrate with APIs, databases, or other services, Sanity provides the flexibility to compose your tech stack as needed.
+
+Real-Time Datastore:
+
+Sanity’s real-time datastore lets you store and query JSON documents. You can subscribe to real-time changes, making it suitable for dynamic applications.
+
+                                           **MEDSWIFT USING SANITY**
+
+Schemas: Schemas are the heart of our content structure. They describe the attributes (fields) of our content and how to interact with it in the studio.
+
+Document Types: A document type is a collection of schema types used to build a standalone piece of content. Each document type typically consists of multiple fields.They define schema type in plain JS on TS objects.
+
+CREATING SCHEMA WITH EXAMPLE:creating a simple schema for a “Person” content type. We’ll add fields for the person’s full name etc.
+
+create  a file like person.tsx
+
+define a schema here;
+name:"person",
+title:"person",
+type:"document",
+fields:[{name: "fullName", title:"fullName", type:"string"},]
+
+In this schema:
+name and title define the schema type.
+fields specify the attributes for the person document.
+
+2-Import the Schema:
+In the main schema file and add it to the schemaTypes array.
+
+3- The sanity studio loads all the schemas defined in the schemas type.The studio also allows to create a new person document.
+
+ALLIGNNG  IT WITH  BUSINESS  GOAL:
+
+MedSwift aims to provide a seamless experience for patients seeking medical services.
+Patients should be able to register, manage their profiles, and access relevant health information.
+
+SCHEMA DESIGN:
+Patient document type:
+
+name:"patient',
+title:"patient',
+id:"id',
+type:"document',
+
+fields:[{name:"fullName", title:'fullName', type:"string"},
+{
+name:"email", title:"email",type:"string", volidation:(rule) => rule.email()
+}
+{
+name:"gender",type:"string", options: {
+list:['male','female']}
+}
+{name:"medicalHistory", title:'medicalHistory', type:"text"},
+{name:"address", title:'address', type:"string"},
+{name:"phone no.", title:phone no. , type:number},
+]
+
+Business Impact:
+
+By capturing essential patient data, MedSwift can:
+
+Personalize recommendations based on medical history.
+Send appointment reminders via email.
+It also managing doctors profile,prescription etc.
+
+
+
+
+
+

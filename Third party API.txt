@@ -1,0 +1,40 @@
+                                                         **THIRD PARTY API's**
+
+Shipment Tracking API:
+
+When patients order medications, they’ll want to know the status of their shipments.
+Look for reliable shipment tracking APIs (such as those provided by shipping carriers like SHIP ENGINE).
+Ensure that the API provides real-time tracking information, including package location, estimated delivery time, and any delays.
+
+*Payment gateways:
+
+Scenario: When patients order medications on MedSwift, they need a smooth payment process.
+API Integration: By connecting MedSwift’s e-commerce platform with payment gateways (such as Stripe, PayPal) via APIs, you can offer various payment options.
+
+Benifits:
+Customers complete transactions without being redirected to external websites.
+reducing fraud risk.
+Status updates ensure timely processing of orders.
+
+*Syncing Inventory and Order Management Systems:
+
+Scenario: MedSwift manages medication inventory and processes orders.
+API Integration: Connect APIs between the inventory system and order management system.
+
+Benefits:
+automatic update
+ensuring accurate stock levels.
+Manual data entry and synchronization errors are minimized.
+
+*Healthcare Data Exchange via APIs:
+
+Scenario: MedSwift collaborates with other healthcare systems (e.g., electronic health records).
+API Integration: Implement APIs for secure data exchange.
+
+Benefits:
+Seamless communication between MedSwift and other systems.
+ Doctors can refer patients with accurate information.
+Patients history
+
+
+
